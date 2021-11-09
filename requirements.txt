@@ -5,5 +5,7 @@ seaborn==0.11.2
 nltk==3.6.5
 regex
 scikit-learn==0.24.2
+torch==1.10.0
 sentence-transformers==2.1.0
 transformers==4.11.3
+python-telegram-bot==13.5
