@@ -22,13 +22,13 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 import numpy as np
 import pandas as pd
-qna_df = pd.read_csv("./data/QnA.csv")
+qna_df = pd.read_csv("../0.Datasets/QnA.csv")
 
 import pickle
-sentence_embeddings = pickle.load(open("./embeddings.pkl", 'rb'))
+sentence_embeddings = pickle.load(open("../4.Retrieval/finetuned_bertbase/answer_embeddings.pkl", 'rb'))
 
 from sentence_transformers import SentenceTransformer
-model = SentenceTransformer("./finetuned-bertbase-1epoch")
+model = SentenceTransformer("./8.Fine-tuned Models/finetuned-bertbase-1epoch")
 
 
 

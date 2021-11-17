@@ -2,13 +2,13 @@ print()
 print("EzFinBot> Getting my kopi, wait ah~~~")
 import numpy as np
 import pandas as pd
-qna_df = pd.read_csv("./data/QnA.csv")
+qna_df = pd.read_csv("../0.Datasets/QnA.csv")
 
 import pickle
-sentence_embeddings = pickle.load(open("./embeddings.pkl", 'rb'))
+sentence_embeddings = pickle.load(open("../4.Retrieval/finetuned_bertbase/answer_embeddings.pkl",'rb'))
 
 from sentence_transformers import SentenceTransformer
-bi_encoder_model = SentenceTransformer("./finetuned-bertbase-1epoch")
+bi_encoder_model = SentenceTransformer("../8.Fine-tuned Models/finetuned-bertbase-1epoch")
 from sentence_transformers.cross_encoder import CrossEncoder
 cross_encoder_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-12-v2')
 print()
