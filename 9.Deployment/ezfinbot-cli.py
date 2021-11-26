@@ -2,6 +2,8 @@ print()
 print("EzFinBot> Getting my kopi, wait ah~~~")
 import numpy as np
 import pandas as pd
+import warnings
+warnings.filterwarnings("ignore")
 qna_df = pd.read_csv("../0.Datasets/QnA.csv")
 
 import pickle
