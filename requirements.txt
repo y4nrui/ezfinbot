@@ -9,5 +9,10 @@ torch==1.10.0
 sentence-transformers==2.1.0
 transformers==4.11.3
 python-telegram-bot==13.5
+spacy==3.2.0
 spacy-wordnet
 aiohttp
+scipy==1.7.3
+rank_bm25
+texthero
+python-telegram-bot==13.8.1
